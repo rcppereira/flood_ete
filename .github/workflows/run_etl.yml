@@ -27,4 +27,4 @@ jobs:
       - name: Executar o script ETL
         env:
           NEON_CONNECTION_STRING: ${{ secrets.NEON_CONNECTION_STRING }}
-        run: python flood_pipeline/ingestion.ipynb
+        run: python flood_pipeline/ingestion.ipynb  
