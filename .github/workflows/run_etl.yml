@@ -1,4 +1,4 @@
-name: Rodar Pipeline de ETL Diariamente
+name: trigger-flood-pipeline
 
 on:
   workflow_dispatch:
@@ -17,7 +17,7 @@ jobs:
       - name: Configurar Python
         uses: actions/setup-python@v4
         with:
-          python-version: '3.11'
+          python-version: '3.9.12'
 
       - name: Instalar dependências
         run: |
